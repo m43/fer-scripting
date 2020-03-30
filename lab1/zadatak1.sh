@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# -*- coding: utf-8 -*-utf-8 -*-
+# -*- coding: utf-8 -*-
 # m43
 
 proba="Ovo je proba"
