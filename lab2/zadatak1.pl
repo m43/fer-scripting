@@ -9,6 +9,7 @@ use feature "switch";
 
 use v5.30;
 
+
 print "Enter a string: ";
 my $str = <STDIN>;
 chomp $str;

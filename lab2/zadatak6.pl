@@ -13,6 +13,7 @@ use locale;
 use utf8;
 use open IO => ':utf8', ':std';
 
+
 my $prefix_length = pop @ARGV;
 my %prefix_to_count;
 

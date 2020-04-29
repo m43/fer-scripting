@@ -9,6 +9,7 @@ use feature 'switch';
 
 use v5.30;
 
+
 my $was_first = 0;
 my @weights;
 my @students;
@@ -39,12 +40,6 @@ sub calculate_points {
     }
     
     $result;
-}
-
-sub compare_students {
-    my $a, my $b;
-    ($a, $b) = @_;
-    calculate_points($a) cmp calculate_points($b);
 }
 
 @students = sort {&calculate_points($b) <=> &calculate_points($a)} @students;

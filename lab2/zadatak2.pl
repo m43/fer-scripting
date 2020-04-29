@@ -9,6 +9,7 @@ use feature "switch";
 
 use v5.30;
 
+
 my @argh;
 my @stop_words = ("STOP", "stop", "kukac", "s");
 my $stop_flag = 0;
