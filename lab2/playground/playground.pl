@@ -97,3 +97,74 @@ sub pikant {
 &pikant 1 2 3;  # i can do this because pikant is already defined ^ 
 pikant 1 2 3;  # furthermore, this can be done because there is no builtin function of same name
 say "-" x 30;
+
+
+
+
+
+my $x = 6 + 7 . "Z";
+print $x;
+say "-" x 30;
+
+
+my $y = "ae " gt "ae";
+print $y;
+say "-" x 30;
+
+
+my @z = (1,2,3);
+$z[9] = 10;
+
+print "\$_ before: $_\n";
+while ($_ = shift(@z)){
+# while ($_ = pop(@z)){
+# for (@z) {
+    print 0+$_;
+    print "\n";
+}
+print "\$_ after: $_\n";
+say "-" x 30;
+
+
+my @fred = qw(hello dolly);
+$y = 2;
+print "This is $fred[1]'s place\n";
+print "This is $fred[$y-1]'s place\n";
+$y = "2*4";
+print "This is $fred[$y-1]'s place\n";  # whoopsy doops
+say "-" x 30;
+
+
+my @numbers = 0..20;
+print "before sort @numbers\n";
+@numbers = sort @numbers;
+print "after sort @numbers\n";
+
+@numbers = 6..10;
+print "before reverse @numbers\n";
+@numbers = reverse @numbers;
+print "after reverse @numbers\n";
+say "-" x 30;
+
+my @betty = ();
+push @betty, "prvi";
+say @betty;
+say "-" x 30;
+
+my $filename = ">/etc/passwd";
+my $success = open FILE, "$filename";
+if (! $success) {
+    say "Could not open '$filename': $!"
+}
+say "-" x 30;
+
+my $a = "a b d a s";
+$_=$a;
+my @x = split;
+print "@x";
+# my $i = 0;
+# for $i in @x {
+#     say $i;
+# }
+print @x x @x;
+say "-" x 30;
